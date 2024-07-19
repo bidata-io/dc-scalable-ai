@@ -84,7 +84,7 @@ In "Designing Scalable AI Systems," you will learn how to build AI systems that 
  
 - **Lesson 1.3: Introduction to Big Data Ecosystems**
   - Learning Objective: Explore the components and tools of big data ecosystems and their roles in scalable AI.
-	- Functions: HDFS, YARN, Hive
+  - Functions: HDFS, YARN, Hive
 
 - **Chapter 1 Capstone:** Design a basic distributed system using Spark to process a large dataset.
 

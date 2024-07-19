@@ -99,11 +99,11 @@ In "Designing Scalable AI Systems," you will learn how to build AI systems that 
  
 - **Lesson 2.3: Optimizing Data Pipelines for Distributed Training**
   - Learning Objective: Learn how to optimize data pipelines to feed data efficiently to distributed models.
-	- Functions: tf.data.Dataset, PyTorch DataLoader
+  - Functions: tf.data.Dataset, PyTorch DataLoader
 
 - **Lesson 2.4: Handling Failures and Fault Tolerance**
   - Learning Objective: Understand and implement strategies for handling failures and ensuring fault tolerance in distributed training.
-	- Functions: Checkpointing, retries, data redundancy
+  - Functions: Checkpointing, retries, data redundancy
  
 - **Chapter 2 Capstone:** Train a deep learning model on a distributed cluster using TensorFlow.
 
@@ -118,11 +118,11 @@ In "Designing Scalable AI Systems," you will learn how to build AI systems that 
  
 - **Lesson 3.3: Managing Stateful Applications in Kubernetes**
   - Learning Objective: Understand how to manage stateful applications and persistent storage in Kubernetes.
-	- Functions: StatefulSets, PersistentVolumes, PersistentVolumeClaims
+  - Functions: StatefulSets, PersistentVolumes, PersistentVolumeClaims
     
 - **Lesson 3.4: Implementing CI/CD Pipelines for AI Models**
   - Learning Objective: Learn how to set up continuous integration and continuous deployment (CI/CD) pipelines for AI models.
-	- Functions: Jenkins, GitHub Actions, Docker Hub
+  - Functions: Jenkins, GitHub Actions, Docker Hub
 
 - **Chapter 3 Capstone:** Containerize a simple application and deploy it on a Kubernetes cluster.
 
@@ -137,11 +137,11 @@ In "Designing Scalable AI Systems," you will learn how to build AI systems that 
 
 - **Lesson 4.3: Scaling AI Systems in Production**
   - Learning Objective: Learn techniques for scaling AI systems in production environments.
-	- Functions: Auto-scaling, load balancing
+  - Functions: Auto-scaling, load balancing
   
 - **Lesson 4.4: Ensuring Security and Compliance in AI Deployments**
   - Learning Objective: Understand best practices for securing AI deployments and ensuring compliance with regulations.
-	- Functions: IAM, encryption, audit logging
+  - Functions: IAM, encryption, audit logging
 
 - **Chapter 4 Capstone:** Deploy an AI model on Google AI Platform and set up a monitoring system.
 

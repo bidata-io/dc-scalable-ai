@@ -2,6 +2,12 @@
 
 # Designing Scalable AI Systems
 
+Christine Amuzie, _Course Instructor_
+
+christine@bidata.io
+
+[bidata.io](https://bidata.io)
+
 [//]: # ( ## Step 1: Brainstorming)
 [//]: 
 <-- (### What problem(s) will students learn how to solve?) -->
@@ -110,7 +116,8 @@ In "Designing Scalable AI Systems," you will learn how to build AI systems that 
 - **Chapter 3 Capstone:** Containerize a simple application and deploy it on a Kubernetes cluster.
 - **Chapter 4 Capstone:** Deploy an AI model on AWS and set up a monitoring system.
 
-## Step 5: Build ONE complete lesson in the Teach editor
+[//]: # (## Step 5: Build ONE complete lesson in the Teach editor)
+## Sneak Peek: Example Lesson
 - **Lesson 2.1: Parallelizing Workloads with Apache Spark**
   - Video Exercise: Introduction to Apache Spark and its use cases.
   - Interactive Exercise 1: Loading data with Spark.

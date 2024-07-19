@@ -148,12 +148,12 @@ In "Designing Scalable AI Systems," you will learn how to build AI systems that 
 [//]: # (## Step 4: Capstone Exercises)
 
 [//]: # (## Step 5: Build ONE complete lesson in the Teach editor)
-## Sneak Peek: Example Lesson
-- **Lesson 2.1: Parallelizing Workloads with Apache Spark**
-  - Video Exercise: Introduction to Apache Spark and its use cases.
-  - Interactive Exercise 1: Loading data with Spark.
-  - Interactive Exercise 2: Transforming data with Spark.
-  - Interactive Exercise 3: Performing actions on Spark DataFrames.
+[//]: # (## Sneak Peek: Example Lesson)
+[//]: # (- **Lesson 2.1: Parallelizing Workloads with Apache Spark**)
+[//]: # (- Video Exercise: Introduction to Apache Spark and its use cases.)
+[//]: # (- Interactive Exercise 1: Loading data with Spark.)
+[//]: # (- Interactive Exercise 2: Transforming data with Spark.)
+[//]: # (- Interactive Exercise 3: Performing actions on Spark DataFrames.)
 
 [//]: # (## Step 6: Revisit Course Outline)
 [//]: # (- Revisit and refine the outline after building the first complete lesson to ensure alignment with the overall course objectives and structure.)

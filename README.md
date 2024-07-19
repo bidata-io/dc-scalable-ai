@@ -143,7 +143,7 @@ In "Designing Scalable AI Systems," you will learn how to build AI systems that 
   - Learning Objective: Understand best practices for securing AI deployments and ensuring compliance with regulations.
   - Functions: IAM, encryption, audit logging
 
-- [**Chapter 4 Capstone:** Deploy an AI model on Google AI Platform and set up a monitoring system.](https://github.com/bidata-io/dc-scalable-ai/ch_4/capstone)
+- [**Chapter 4 Capstone:** Deploy an AI model on Google AI Platform and set up a monitoring system.](https://github.com/bidata-io/dc-scalable-ai/tree/main/ch_4/capstone)
 
 [//]: # (## Step 4: Capstone Exercises)
 

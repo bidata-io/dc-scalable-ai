@@ -82,6 +82,8 @@ In "Designing Scalable AI Systems," you will learn how to build AI systems that 
   - Learning Objective: Learn the fundamentals of distributed computing.
   - Functions: MapReduce, Spark basics
 
+- **Chapter 1 Capstone:** Design a basic distributed system using Spark to process a large dataset.
+
 ### Chapter 2: Distributed Model Training
 - **Lesson 2.1: Parallelizing Workloads with Apache Spark**
   - Learning Objective: Utilize Apache Spark for distributed data processing.
@@ -90,6 +92,8 @@ In "Designing Scalable AI Systems," you will learn how to build AI systems that 
 - **Lesson 2.2: Distributed Training with TensorFlow and PyTorch**
   - Learning Objective: Train machine learning models across multiple nodes.
   - Functions: tf.distribute.Strategy, torch.distributed
+ 
+- **Chapter 2 Capstone:** Train a deep learning model on a distributed cluster using TensorFlow.
 
 ### Chapter 3: Containerization and Orchestration
 - **Lesson 3.1: Introduction to Docker**
@@ -100,6 +104,8 @@ In "Designing Scalable AI Systems," you will learn how to build AI systems that 
   - Learning Objective: Deploy and manage containerized applications with Kubernetes.
   - Functions: kubectl apply, kubectl scale
 
+- **Chapter 3 Capstone:** Containerize a simple application and deploy it on a Kubernetes cluster.
+
 ### Chapter 4: Deployment and Monitoring
 - **Lesson 4.1: Deploying AI Models in the Cloud**
   - Learning Objective: Deploy AI models using cloud services.
@@ -109,12 +115,9 @@ In "Designing Scalable AI Systems," you will learn how to build AI systems that 
   - Learning Objective: Implement monitoring and maintenance strategies for AI systems.
   - Functions: Prometheus, Grafana
 
-[//]: # (## Step 4: Capstone Exercises)
-## Capstone Exercises
-- **Chapter 1 Capstone:** Design a basic distributed system using Spark to process a large dataset.
-- **Chapter 2 Capstone:** Train a deep learning model on a distributed cluster using TensorFlow.
-- **Chapter 3 Capstone:** Containerize a simple application and deploy it on a Kubernetes cluster.
 - **Chapter 4 Capstone:** Deploy an AI model on AWS and set up a monitoring system.
+
+[//]: # (## Step 4: Capstone Exercises)
 
 [//]: # (## Step 5: Build ONE complete lesson in the Teach editor)
 ## Sneak Peek: Example Lesson

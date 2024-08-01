@@ -1,76 +1,77 @@
-import boto3
-from google.cloud import aiplatform
-from google.cloud import monitoring_v3
-from google.api_core.exceptions import GoogleAPIError
-import requests
+import torch
+import torch.nn as nn
+import torch.optim as optim
+from torchvision import datasets, transforms
 
-def test_step_1_deploy_model():
+def test_step_1_evaluate_model(model, test_loader):
     try:
-        aiplatform.init(project='your-project-id')
+        model.eval()
+        correct = 0
+        total = 0
+        with torch.no_grad():
+            for data, target in test_loader:
+                output = model(data)
+                _, predicted = torch.max(output.data, 1)
+                total += target.size(0)
+                correct += (predicted == target).sum().item()
+        accuracy = 100 * correct / total
+        print(f'Step 1: Test Accuracy: {accuracy}%')
+    except Exception as e:
+        print(f'Step 1: error in model evaluation: {e}')
 
-        model = aiplatform.Model('projects/your-project-id/locations/us-central1/models/your-model-id')
-        endpoint = model.deploy(
-            deployed_model_display_name='my-deployed-model',
-            machine_type='n1-standard-4',  
-            min_replica_count=1,
-            max_replica_count=5, 
-            traffic_split={"0": 100}
-        )
-        print(f"Step 1: Endpoint deployed successfully: {endpoint.resource_name}")
-    except GoogleAPIError as e:
-        print(f"Step 1: Failed to deploy endpoint. Error: {e}")
-
-def test_step_2_set_up_monitoring():
+def test_step_2_save_model(model, file_path='model.pth'):
     try:
-        client = monitoring_v3.MetricServiceClient()
-        project_name = f"projects/your-project-id"
+        torch.save(model.state_dict(), file_path)
+        print('Step 2: Model saved successfully to model.pth')
 
-        # Create a metric descriptor for monitoring
-        descriptor = monitoring_v3.MetricDescriptor()
-        descriptor.type = "custom.googleapis.com/deployed_model/latency"
-        descriptor.metric_kind = monitoring_v3.MetricDescriptor.MetricKind.GAUGE
-        descriptor.value_type = monitoring_v3.MetricDescriptor.ValueType.DOUBLE
-        descriptor.description = "The latency of the deployed model"
+    except Exception as e:
+        print(f'Step 2: Error in saving model: {e}')
 
-        client.create_metric_descriptor(name=project_name, metric_descriptor=descriptor)
-        print("Step 2: Metric descriptor created successfully")
-    except GoogleAPIError as e:
-        print(f"Step 2: Failed to create metric descriptor. Error: {e}")
-
-def test_step_3_configure_auto_scaling():
+def test_step_3_load_model(file_path='model.pth'):
     try:
-        aiplatform.init(project='your-project-id')
-        endpoint = aiplatform.Endpoint('projects/your-project-id/locations/us-central1/endpoints/your-endpoint-id')
+        loaded_model = SimpleNN()
+        loaded_model.load_state_dict(torch.load(file_path))
+        loaded_model.eval()
+        print('Step 3: Model loaded successfully from model.pth')
+        return loaded_model
+    except Exception as e:
+        print(f'Step 3: Error in loading model: {e}')
+        return None
 
-        # Get the current auto-scaling policy for the endpoint
-        autoscaling_policy = endpoint.get_traffic_split()
-        print(f"Current auto-scaling policy: {autoscaling_policy}")
-
-        # Update auto-scaling configuration if necessary
-        if autoscaling_policy["0"] != 100:
-            autoscaling_policy["0"] = 100
-            endpoint.update_traffic_split(autoscaling_policy)
-            print(f"Updated auto-scaling policy: {autoscaling_policy}")
-
-        # Ensure the endpoint is configured for auto-scaling
-        operation = aiplatform.Endpoint.deploy(
-            endpoint_name=endpoint.resource_name,
-            deployed_model_display_name='my-deployed-model',
-            machine_type='n1-standard-4',
-            min_replica_count=1,
-            max_replica_count=5
-        )
-        operation.result()
-        print(f"Step 3: Auto-scaling configured successfully: min_replica_count=1, max_replica_count=5")
-    except GoogleAPIError as e:
-        print(f"Step 3: Failed to configure auto-scaling. Error: {e}")
+def test_step_4_inference(model):
+    try:
+        sample_input = torch.randn(1, 1, 28, 28)
+        output = model(sample_input)
+        print(f'Step 4: Inference output: {output}')
+    except Exception as e:
+        print(f'Step 4: Error in performing inference: {e}')
 
 if __name__ == "__main__":
-    print("Testing Step 1: Deploy Model to Google AI Platform")
-    test_step_1_deploy_model()
-    
-    print("Testing Step 2: Set Up Google Cloud Monitoring")
-    test_step_2_set_up_monitoring()
-    
-    print("Testing Step 3: Configure Auto-Scaling for the Deployed Model")
-    test_step_3_configure_auto_scaling()
+    class SimpleNN(nn.Module):
+        def __init__(self):
+            super(SimpleNN, self).__init__()
+            self.fc = nn.Linear(784, 10)
+
+        def forward(self, x):
+            x = x.view(-1, 784)
+            return self.fc(x)
+
+model = SimpleNN()
+# model.load_state_dict(torch.load('trained_model.pth'))
+
+transform = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.5,), (0.5,))])
+test_dataset = datasets.MNIST('.', train=False, transform=transform)
+test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=64, shuffle=False)
+
+print("Testing Step 1: Evaluate Model")
+test_step_1_evaluate_model(model, test_loader)
+
+print("Testing Step 2: Save Model")
+test_step_2_save_model(model)
+
+print("Testing Step 3: Load Model")
+loaded_model = test_step_3_load_model()
+
+if loaded_model:
+    print("Testing Step 4: Perform Inference")
+    test_step_4_inference(loaded_model)

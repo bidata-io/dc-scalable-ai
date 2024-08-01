@@ -80,62 +80,62 @@ Dive into the world of scalable AI systems with this course crafted to equip AI 
 
 - **Lesson 1.2: Introduction to PyTorch**
   - Learning Objective: Understand the basics of PyTorch and its role in scalable AI.
-  - Functions: torch.tensor, basic tensor operations
+  - Functions: `torch.tensor`, basic tensor operations
     
 - **Lesson 1.3: Coding with and Without PyTorch**
   - Learning Objective: Compare and contrast traditional Python code with PyTorch code, implementing similar operations using PyTorch for efficiency and scalability.
-  - Functions: torch operations, matrix multiplications, and element-wise operations
+  - Functions: `torch` operations, matrix multiplications, and element-wise operations
 
 ### Chapter 2: Building and Training Models with PyTorch
 - **Lesson 2.1: Setting Up Your Development Environment**
   - Learning Objective: Set up PyTorch and necessary libraries for model building
-  - Functions: pip install torch, basic environment setup
+  - Functions: `pip install torch`, basic environment setup
     
 - **Lesson 2.2: Understanding PyTorch Datasets and DataLoader**
   - Learning Objective: Utilize PyTorch Datasets and DataLoaders for efficient data handling
-  - Functions: torch.utils.data.Dataset, torch.utils.data.DataLoader
+  - Functions: `torch.utils.data.Dataset`, `torch.utils.data.DataLoader`
     
 - **Lesson 2.3: Building a Simple Neural Network with PyTorch**
   - Learning Objective: Construct and understand the components of a simple neural network
-  - Functions: torch.nn.Module, torch.nn.Linear, torch.nn.ReLU
+  - Functions: `torch.nn.Module`, `torch.nn.Linear`, `torch.nn.ReLU`
     
 - **Lesson 2.4: Training Your Model**
   - Learning Objective: Implement the training loop for your model.
-  - Functions: torch.optim, forward and backward passes, loss calculation
+  - Functions: `torch.optim`, forward and backward passes, loss calculation
     
 - **Lesson 2.5: Experimentation and Hyperparameter Tuning**
   - Learning Objective: Conduct experiments and tune hyperparameters to improve model performance.
-  - Functions: torch.optim.lr_scheduler, manual hyperparameter adjustments
+  - Functions: `torch.optim.lr_scheduler`, manual hyperparameter adjustments
 
 ### Chapter 3: Advanced Topics in PyTorch and PyTorch Lightning
 - **Lesson 3.1: Introduction to PyTorch Lightning**
   - Learning Objective: Understand the benefits and basic usage of PyTorch Lightning 
-  - Functions: pytorch_lightning.LightningModule, pytorch_lightning.Trainer
+  - Functions: `pytorch_lightning.LightningModule`, `pytorch_lightning.Trainer`
     
 - **Lesson 3.2: Building Models with PyTorch Lightning**
   - Learning Objective: Reconstruct a PyTorch model using PyTorch Lightning for better scalability and readability
-  - Functions: pytorch_lightning.LightningModule methods
+  - Functions: `pytorch_lightning.LightningModule` methods
     
 - **Lesson 3.3: Training with PyTorch Lightning**
   - Learning Objective: Train models more efficiently using PyTorch Lightning
-  - Functions: pytorch_lightning.Trainer.fit, checkpointing, logging
+  - Functions: `pytorch_lightning.Trainer.fit`, checkpointing, logging
     
 - **Lesson 3.4: Advanced Model Architectures**
   - Learning Objective: Explore and implement advanced model architectures such as CNNs and RNNs.
-  - Functions: torch.nn.Conv2d, torch.nn.LSTM, custom model layers
+  - Functions: `torch.nn.Conv2d`, `torch.nn.LSTM`, custom model layers
 
 ### Chapter 4: Preparing Models for Production
 - **Lesson 4.1: Model Evaluation and Testing**
   - Learning Objective: Evaluate and test your model to ensure it meets production standards
-  - Functions: torchmetrics, validation steps, testing datasets
+  - Functions: `torchmetrics`, validation steps, testing datasets
     
 - **Lesson 4.2: Saving and Loading Models**
   - Learning Objective: Save trained models and load them for inference.
-  - Functions: torch.save, torch.load, model.eval
+  - Functions: `torch.save`, `torch.load`, `model.eval`
     
 - **Lesson 4.3: Deployment Options**
   - Learning Objective: Explore different deployment options for PyTorch models
-  - Functions: torch.jit, ONNX, brief mention of cloud deployment options
+  - Functions: `torch.jit`, `onnx`, brief mention of cloud deployment options
    
 - **Lesson 4.4: Introduction to Other Libraries**
   - Learning Objective: Get an overview of other useful libraries for productionizing AI models

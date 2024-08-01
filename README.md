@@ -63,7 +63,7 @@ christine@bidata.io
 ## Overview
 
 ### Course Description
-In "Designing Scalable AI Systems," you will learn how to build AI systems that can handle large-scale data and complex computations. This course covers the principles of scalable AI architectures, distributed computing frameworks, and deployment strategies. By the end of this course, you will be equipped with the skills to design, implement, and maintain scalable AI solutions in production environments.
+Dive into the world of scalable AI systems with this course crafted to equip AI practitioners with the knowledge and tools for architecting and deploying AI solutions efficiently. This course focuses on establishing a strong foundation in scalable AI development and deployment with an emphasis on PyTorch and PyTorch Lightning. Learners will gain the expertise to enhance AI system performance and ensure fast deployment across diverse environments. This course is tailored for professionals looking to scale AI projects.
 
 ### Prerequisites
 - Intermediate knowledge of AI and machine learning.
@@ -73,77 +73,78 @@ In "Designing Scalable AI Systems," you will learn how to build AI systems that 
 
 ## Outline
 
-### Chapter 1: Introduction to Scalable AI Systems
-- **Lesson 1.1: Overview of Scalability**
+### Chapter 1: Introduction to Scalable AI Systems with PyTorch
+- **Lesson 1.1: Overview of Scalability in AI Systems**
   - Learning Objective: Understand the concept of scalability and its importance in AI systems.
   - Functions: None (theoretical lesson)
 
-- **Lesson 1.2: Basics of Distributed Computing**
-  - Learning Objective: Learn the fundamentals of distributed computing.
-  - Functions: MapReduce, Spark basics
- 
-- **Lesson 1.3: Introduction to Big Data Ecosystems**
-  - Learning Objective: Explore the components and tools of big data ecosystems and their roles in scalable AI.
-  - Functions: HDFS, YARN, Hive
-
-- **Chapter 1 Capstone:** Design a basic distributed system using Spark to process a large dataset.
-
-### Chapter 2: Distributed Model Training
-- **Lesson 2.1: Parallelizing Workloads with Apache Spark**
-  - Learning Objective: Utilize Apache Spark for distributed data processing.
-  - Functions: spark.read, spark.transformations, spark.actions
-
-- **Lesson 2.2: Distributed Training with TensorFlow and PyTorch**
-  - Learning Objective: Train machine learning models across multiple nodes.
-  - Functions: tf.distribute.Strategy, torch.distributed
- 
-- **Lesson 2.3: Optimizing Data Pipelines for Distributed Training**
-  - Learning Objective: Learn how to optimize data pipelines to feed data efficiently to distributed models.
-  - Functions: tf.data.Dataset, PyTorch DataLoader
-
-- **Lesson 2.4: Handling Failures and Fault Tolerance**
-  - Learning Objective: Understand and implement strategies for handling failures and ensuring fault tolerance in distributed training.
-  - Functions: Checkpointing, retries, data redundancy
- 
-- **Chapter 2 Capstone:** Train a deep learning model on a distributed cluster using TensorFlow.
-
-### Chapter 3: Containerization and Orchestration
-- **Lesson 3.1: Introduction to Docker**
-  - Learning Objective: Learn how to containerize applications using Docker.
-  - Functions: docker build, docker run
-
-- **Lesson 3.2: Orchestrating Containers with Kubernetes**
-  - Learning Objective: Deploy and manage containerized applications with Kubernetes.
-  - Functions: kubectl apply, kubectl scale
- 
-- **Lesson 3.3: Managing Stateful Applications in Kubernetes**
-  - Learning Objective: Understand how to manage stateful applications and persistent storage in Kubernetes.
-  - Functions: StatefulSets, PersistentVolumes, PersistentVolumeClaims
+- **Lesson 1.2: Introduction to PyTorch**
+  - Learning Objective: Understand the basics of PyTorch and its role in scalable AI.
+  - Functions: torch.tensor, basic tensor operations
     
-- **Lesson 3.4: Implementing CI/CD Pipelines for AI Models**
-  - Learning Objective: Learn how to set up continuous integration and continuous deployment (CI/CD) pipelines for AI models.
-  - Functions: Jenkins, GitHub Actions, Docker Hub
+- **Lesson 1.3: Coding with and Without PyTorch**
+  - Learning Objective: Compare and contrast traditional Python code with PyTorch code, implementing similar operations using PyTorch for efficiency and scalability.
+  - Functions: torch operations, matrix multiplications, and element-wise operations
 
-- **Chapter 3 Capstone:** Containerize a simple application and deploy it on a Kubernetes cluster.
+### Chapter 2: Building and Training Models with PyTorch
+- **Lesson 2.1: Setting Up Your Development Environment**
+  - Learning Objective: Set up PyTorch and necessary libraries for model building
+  - Functions: pip install torch, basic environment setup
+    
+- **Lesson 2.2: Understanding PyTorch Datasets and DataLoader**
+  - Learning Objective: Utilize PyTorch Datasets and DataLoaders for efficient data handling
+  - Functions: torch.utils.data.Dataset, torch.utils.data.DataLoader
+    
+- **Lesson 2.3: Building a Simple Neural Network with PyTorch**
+  - Learning Objective: Construct and understand the components of a simple neural network
+  - Functions: torch.nn.Module, torch.nn.Linear, torch.nn.ReLU
+    
+- **Lesson 2.4: Training Your Model**
+  - Learning Objective: Implement the training loop for your model.
+  - Functions: torch.optim, forward and backward passes, loss calculation
+    
+- **Lesson 2.5: Experimentation and Hyperparameter Tuning**
+  - Learning Objective: Conduct experiments and tune hyperparameters to improve model performance.
+  - Functions: torch.optim.lr_scheduler, manual hyperparameter adjustments
 
-### Chapter 4: Deployment and Monitoring
-- **Lesson 4.1: Deploying AI Models in the Cloud**
-  - Learning Objective: Deploy AI models using cloud services.
-  - Functions: AWS SageMaker, Google AI Platform
+### Chapter 3: Advanced Topics in PyTorch and PyTorch Lightning
+- **Lesson 3.1: Introduction to PyTorch Lightning**
+  - Learning Objective: Understand the benefits and basic usage of PyTorch Lightning 
+  - Functions: pytorch_lightning.LightningModule, pytorch_lightning.Trainer
+    
+- **Lesson 3.2: Building Models with PyTorch Lightning**
+  - Learning Objective: Reconstruct a PyTorch model using PyTorch Lightning for better scalability and readability
+  - Functions: pytorch_lightning.LightningModule methods
+    
+- **Lesson 3.3: Training with PyTorch Lightning**
+  - Learning Objective: Train models more efficiently using PyTorch Lightning
+  - Functions: pytorch_lightning.Trainer.fit, checkpointing, logging
+    
+- **Lesson 3.4: Advanced Model Architectures**
+  - Learning Objective: Explore and implement advanced model architectures such as CNNs and RNNs.
+  - Functions: torch.nn.Conv2d, torch.nn.LSTM, custom model layers
 
-- **Lesson 4.2: Monitoring and Maintenance of AI Systems**
-  - Learning Objective: Implement monitoring and maintenance strategies for AI systems.
-  - Functions: Prometheus, Grafana
+### Chapter 4: Preparing Models for Production
+- **Lesson 4.1: Model Evaluation and Testing**
+  - Learning Objective: Evaluate and test your model to ensure it meets production standards
+  - Functions: torchmetrics, validation steps, testing datasets
+    
+- **Lesson 4.2: Saving and Loading Models**
+  - Learning Objective: Save trained models and load them for inference.
+  - Functions: torch.save, torch.load, model.eval
+    
+- **Lesson 4.3: Deployment Options**
+  - Learning Objective: Explore different deployment options for PyTorch models
+  - Functions: torch.jit, ONNX, brief mention of cloud deployment options
+   
+- **Lesson 4.4: Introduction to Other Libraries**
+  - Learning Objective: Get an overview of other useful libraries for productionizing AI models
+  - Functions: brief introduction to TensorFlow Serving, MLflow, FastAPI for serving models
 
-- **Lesson 4.3: Scaling AI Systems in Production**
-  - Learning Objective: Learn techniques for scaling AI systems in production environments.
-  - Functions: Auto-scaling, load balancing
-  
-- **Lesson 4.4: Ensuring Security and Compliance in AI Deployments**
-  - Learning Objective: Understand best practices for securing AI deployments and ensuring compliance with regulations.
-  - Functions: IAM, encryption, audit logging
+### [**Capstone:** Design A Scalable AI System](https://github.com/bidata-io/dc-scalable-ai/tree/main/ch_4/capstone)
 
-- [**Chapter 4 Capstone:** Deploy an AI model on Google AI Platform and set up a monitoring system.](https://github.com/bidata-io/dc-scalable-ai/tree/main/ch_4/capstone)
+
+
 
 [//]: # (## Step 4: Capstone Exercises)
 

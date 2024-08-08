@@ -105,6 +105,10 @@ Dive into the world of scalable AI systems with this course crafted to equip AI 
 - **Lesson 2.4: Advanced Model Architectures**
   - Learning Objective: Explore and implement advanced model architectures such as CNNs and RNNs.
   - Functions: `torch.nn.Conv2d`, `torch.nn.LSTM`, custom model layers
+    
+- **Lesson 2.5: Experiment Management with PyTorch Lightning**
+  - Learning Objective: Manage and track experiments using built-in features of PyTorch Lightning.
+  - Functions: `pytorch_lightning.loggers`, experiment tracking tools
 
 ### Chapter 3: Preparing Models for Production
 - **Lesson 3.1: Model Evaluation and Testing**

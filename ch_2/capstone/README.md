@@ -60,7 +60,7 @@ class CNNModel(pl.LightningModule):
 
 ## Solution
 
-[solution.py](https://github.com/bidata-io/dc-scalable-ai/main/ch_2/capstone/1/solution.py)
+[solution.py](https://github.com/bidata-io/dc-scalable-ai/blob/main/ch_2/capstone/1/solution.py)
 
 ## Sample Code
 ```python
@@ -79,4 +79,4 @@ trainer.fit(model, train_loader)
 
 ## Submission Correctness Tests (SCT)
 
-[sct.py](https://github.com/bidata-io/dc-scalable-ai/main/ch_2/capstone/1/sct.py)
+[sct.py](https://github.com/bidata-io/dc-scalable-ai/blob/main/ch_2/capstone/1/sct.py)

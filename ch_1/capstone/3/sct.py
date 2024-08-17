@@ -11,3 +11,5 @@ result = tensor1 + tensor2
 pytorch_time = time.time() - start_time
 
 assert python_time > pytorch_time, "Step 3 failed: PyTorch is not faster as expected."
+
+# Ex().success_msg("All checks have passed.")

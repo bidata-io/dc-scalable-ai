@@ -30,7 +30,7 @@ Use a loop or list comprehension to iterate over both lists simultaneously and a
 
 > SOLUTION
 
-[solution.py](https://github.com/bidata-io/dc-scalable-ai/new/main/ch_1/capstone/1/solution.py)
+[solution.py](https://github.com/bidata-io/dc-scalable-ai/main/ch_1/capstone/1/solution.py)
 
 > SAMPLE CODE
 
@@ -42,7 +42,7 @@ result = [ ]
 
 > SUBMISSION CORRECTNESS TESTS (SCT)
 
-[sct.py](https://github.com/bidata-io/dc-scalable-ai/new/main/ch_1/capstone/1/sct.py)
+[sct.py](https://github.com/bidata-io/dc-scalable-ai/main/ch_1/capstone/1/sct.py)
 
 </details>
 

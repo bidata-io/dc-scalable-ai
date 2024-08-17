@@ -11,4 +11,4 @@
   - Learning Objective: Compare and contrast traditional Python code with PyTorch code, implementing similar operations using PyTorch for efficiency and scalability.
   - Functions: `torch` operations, matrix multiplications, and element-wise operations
  
-[Chapter 1 Capstone](https://github.com/bidata-io/dc-scalable-ai/blob/main/ch_1/capstone/README.md)
+- [Chapter 1 Capstone](https://github.com/bidata-io/dc-scalable-ai/blob/main/ch_1/capstone/README.md)

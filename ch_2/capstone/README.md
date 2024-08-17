@@ -60,7 +60,7 @@ class CNNModel(pl.LightningModule):
 
 ## Solution
 
-[solution.py](https://github.com/bidata-io/dc-scalable-ai/edit/main/ch_2/capstone/1/solution.py)
+[solution.py](https://github.com/bidata-io/dc-scalable-ai/main/ch_2/capstone/1/solution.py)
 
 ## Sample Code
 ```python

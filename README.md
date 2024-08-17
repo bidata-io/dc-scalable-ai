@@ -53,8 +53,8 @@ christine@bidata.io
 [//]: # ( - Assuming saving and loading models is as simple as saving regular Python objects.)
 
 [//]: # (### What datasets will you use?)
-- MNIST dataset for image classification tasks.
-- Custom synthetic datasets for specific exercises.
+[//]: # ( - CIFAR-10 dataset for image classification tasks.)
+[//]: # ( - Custom synthetic datasets for specific exercises.)
 
 [//]: # (## Step 2: Who Is This Course for?)
 [//]: # ( - Intermediate to advanced learners with some experience in AI and machine learning.)

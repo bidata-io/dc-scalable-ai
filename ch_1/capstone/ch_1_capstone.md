@@ -42,7 +42,7 @@ result = [ ]
 
 > SUBMISSION CORRECTNESS TESTS (SCT)
 
-[sct.py](https://github.com/bidata-io/dc-scalable-ai/main/ch_1/capstone/1/sct.py)
+[sct.py](https://github.com/bidata-io/dc-scalable-ai/blob/main/ch_1/capstone/1/sct.py)
 
 </details>
 
@@ -64,7 +64,7 @@ result = [ ]
 
 > SOLUTION
 
-[solution.py](https://github.com/bidata-io/dc-scalable-ai/new/main/ch_1/capstone/2/solution.py)
+[solution.py](https://github.com/bidata-io/dc-scalable-ai/blob/main/ch_1/capstone/2/solution.py)
 
 > SAMPLE CODE
 
@@ -77,7 +77,7 @@ result =
 
 > SUBMISSION CORRECTNESS TESTS (SCT)
 
-[sct.py](https://github.com/bidata-io/dc-scalable-ai/new/main/ch_1/capstone/2/sct.py)
+[sct.py](https://github.com/bidata-io/dc-scalable-ai/blob/main/ch_1/capstone/2/sct.py)
 
 </details>
 
@@ -99,7 +99,7 @@ result =
 
 > SOLUTION
 
-[solution.py](https://github.com/bidata-io/dc-scalable-ai/new/main/ch_1/capstone/3/solution.py)
+[solution.py](https://github.com/bidata-io/dc-scalable-ai/blob/main/ch_1/capstone/3/solution.py)
 
 > SAMPLE CODE
 
@@ -116,6 +116,6 @@ pytorch_time = time.time() - start_time
 
 > SUBMISSION CORRECTNESS TESTS (SCT)
 
-[sct.py](https://github.com/bidata-io/dc-scalable-ai/new/main/ch_1/capstone/3/sct.py)
+[sct.py](https://github.com/bidata-io/dc-scalable-ai/blob/main/ch_1/capstone/3/sct.py)
 
 </details>

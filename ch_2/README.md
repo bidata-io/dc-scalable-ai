@@ -1,5 +1,5 @@
 # Chapter 2: Advanced Topics in PyTorch and PyTorch Lightning
-- **Lesson 2.1: Introduction to PyTorch Lightning**
+- **[Lesson 2.1: Introduction to PyTorch Lightning](https://drive.google.com/file/d/1pq5FQETP24-Tj-txXhJwHbArjiLB4Q00/view)**
   - Learning Objective: Understand the benefits and basic usage of PyTorch Lightning 
   - Functions: `pytorch_lightning.LightningModule`, `pytorch_lightning.Trainer`
     

@@ -30,7 +30,7 @@ Use a loop or list comprehension to iterate over both lists simultaneously and a
 
 > SOLUTION
 
-[solution.py](https://github.com/bidata-io/dc-scalable-ai/main/ch_1/capstone/1/solution.py)
+[solution.py](https://github.com/bidata-io/dc-scalable-ai/blob/main/ch_1/capstone/1/solution.py)
 
 > SAMPLE CODE
 

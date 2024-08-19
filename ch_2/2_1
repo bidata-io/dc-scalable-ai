@@ -1,12 +1,1 @@
-# Lesson 2.1 - Introduction to PyTorch Lightning
 
-## Learning Objective
-
-Understand the benefits and basic usage of PyTorch Lightning
-
-
-## Functions
-
-`pytorch_lightning.LightningModule`, `pytorch_lightning.Trainer`
-
-[## Exercise 1]()

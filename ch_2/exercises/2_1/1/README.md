@@ -19,8 +19,8 @@ import torch
 import torchvision
 ```
 
-### [Step 1](https://github.com/bidata-io/dc-scalable-ai/tree/main/ch_2/exercises/2_1/1)
+### [Step 1](https://github.com/bidata-io/dc-scalable-ai/tree/main/ch_2/exercises/2_1/1/1)
 
-### [Step 2](https://github.com/bidata-io/dc-scalable-ai/tree/main/ch_2/exercises/2_1/2)
+### [Step 2](https://github.com/bidata-io/dc-scalable-ai/tree/main/ch_2/exercises/2_1/1/2)
 
-### [Step 3](https://github.com/bidata-io/dc-scalable-ai/tree/main/ch_2/exercises/2_1/3/1)
+### [Step 3](https://github.com/bidata-io/dc-scalable-ai/tree/main/ch_2/exercises/2_1/1/3)

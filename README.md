@@ -88,9 +88,11 @@ Dive into the world of scalable AI systems with this course crafted to equip AI 
 - **Lesson 1.3: Coding with and Without PyTorch**
   - Learning Objective: Compare and contrast traditional Python code with PyTorch code, implementing similar operations using PyTorch for efficiency and scalability.
   - Functions: `torch` operations, matrix multiplications, and element-wise operations
+ 
+- **[Chapter 1 - Capstone](https://github.com/bidata-io/dc-scalable-ai/tree/main/ch_1/capstone)**
 
 ### Chapter 2: Advanced Topics in PyTorch and PyTorch Lightning
-- **Lesson 2.1: Introduction to PyTorch Lightning**
+- **[Lesson 2.1: Introduction to PyTorch Lightning]()**
   - Learning Objective: Understand the benefits and basic usage of PyTorch Lightning 
   - Functions: `pytorch_lightning.LightningModule`, `pytorch_lightning.Trainer`
     
@@ -109,6 +111,8 @@ Dive into the world of scalable AI systems with this course crafted to equip AI 
 - **Lesson 2.5: Experiment Management with PyTorch Lightning**
   - Learning Objective: Manage and track experiments using built-in features of PyTorch Lightning.
   - Functions: `pytorch_lightning.loggers`, experiment tracking tools
+ 
+- **[Chapter 2 - Capstone](https://github.com/bidata-io/dc-scalable-ai/tree/main/ch_2/capstone)**
 
 ### Chapter 3: Preparing Models for Production
 - **Lesson 3.1: Model Evaluation and Testing**

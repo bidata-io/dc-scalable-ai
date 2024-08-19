@@ -1,5 +1,7 @@
 # Setting Up PyTorch Lightning
 
+***Step 1***
+
 ## Instructions
 
 - Create a `LitModel` class that inherits from `LightningModule`. Define a linear layer in the `__init__` method.

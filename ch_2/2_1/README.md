@@ -9,10 +9,12 @@ Understand the benefits and basic usage of PyTorch Lightning
 
 `pytorch_lightning.LightningModule`, `pytorch_lightning.Trainer`
 
-## [Video](https://drive.google.com/file/d/1pq5FQETP24-Tj-txXhJwHbArjiLB4Q00/view)
+## Content
 
-## [Exercise 1](https://github.com/bidata-io/dc-scalable-ai/tree/main/ch_2/exercises/2_1/1)
+### [Video](https://drive.google.com/file/d/1pq5FQETP24-Tj-txXhJwHbArjiLB4Q00/view)
 
-## [Exercise 2](https://github.com/bidata-io/dc-scalable-ai/tree/main/ch_2/exercises/2_1/2)
+### [Exercise 1](https://github.com/bidata-io/dc-scalable-ai/tree/main/ch_2/exercises/2_1/1)
 
-## [Exercise 3](https://github.com/bidata-io/dc-scalable-ai/tree/main/ch_2/exercises/2_1/3)
+### [Exercise 2](https://github.com/bidata-io/dc-scalable-ai/tree/main/ch_2/exercises/2_1/2)
+
+### [Exercise 3](https://github.com/bidata-io/dc-scalable-ai/tree/main/ch_2/exercises/2_1/3)

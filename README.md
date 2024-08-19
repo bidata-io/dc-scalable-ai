@@ -127,7 +127,7 @@ Dive into the world of scalable AI systems with this course crafted to equip AI 
   - Learning Objective: Get an overview of other useful libraries for productionizing AI models
   - Functions: brief introduction to TensorFlow Serving, MLflow, FastAPI for serving models
 
-### [**Capstone:** Design A Scalable AI System](https://github.com/bidata-io/dc-scalable-ai/tree/main/ch_4/capstone)
+### [**Capstone:** Design A Scalable AI System](https://github.com/bidata-io/dc-scalable-ai/tree/main/ch_3/capstone)
 
 
 

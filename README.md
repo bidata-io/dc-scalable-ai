@@ -92,9 +92,13 @@ Dive into the world of scalable AI systems with this course crafted to equip AI 
 - **[Chapter 1 - Capstone](https://github.com/bidata-io/dc-scalable-ai/tree/main/ch_1/capstone)**
 
 ### Chapter 2: Advanced Topics in PyTorch and PyTorch Lightning
-- **[Lesson 2.1: Introduction to PyTorch Lightning]()**
+- **[Lesson 2.1: Introduction to PyTorch Lightning](https://github.com/bidata-io/dc-scalable-ai/blob/main/ch_2/2_1)**
   - Learning Objective: Understand the benefits and basic usage of PyTorch Lightning 
   - Functions: `pytorch_lightning.LightningModule`, `pytorch_lightning.Trainer`
+  - [Video](https://drive.google.com/file/d/1pq5FQETP24-Tj-txXhJwHbArjiLB4Q00/view)
+  - [Exercise 1](https://github.com/bidata-io/dc-scalable-ai/tree/main/ch_2/exercises/2_1/1)
+  - [Exercise 2](https://github.com/bidata-io/dc-scalable-ai/tree/main/ch_2/exercises/2_1/2)
+  - [Exercise 3](https://github.com/bidata-io/dc-scalable-ai/tree/main/ch_2/exercises/2_1/3)
     
 - **Lesson 2.2: Building Models with PyTorch Lightning**
   - Learning Objective: Reconstruct a PyTorch model using PyTorch Lightning for better scalability and readability
